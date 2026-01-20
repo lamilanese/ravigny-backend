@@ -1,0 +1,22 @@
+# Environment variables - NEVER commit
+.env
+.env.local
+.env*.local
+
+# Vercel
+.vercel
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
