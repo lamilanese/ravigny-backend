@@ -16,10 +16,10 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, l_name, interest, countryCode, phone } = req.body;
+    const { first_name, last_name, interest, countryCode, phone } = req.body;
 
     // Validate required fields
-    if (!name || !l_name || !interest || !countryCode || !phone) {
+    if (!first_name || !last_name || !interest || !countryCode || !phone) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
@@ -28,7 +28,7 @@ export default async function handler(req, res) {
 
     const message = `🆕 Nouvelle réponse - Ravigny 2026
 
-👤 Nom: ${sanitize(name)} ${sanitize(l_name)}
+👤 Nom: ${sanitize(first_name)} ${sanitize(last_name)}
 📊 Présence: ${sanitize(interest)}
 📞 Téléphone: ${sanitize(countryCode)} ${sanitize(phone)}`;
 
