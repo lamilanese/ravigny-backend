@@ -3,6 +3,15 @@
     { "src": "api/send-telegram.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/send-telegram", "dest": "api/send-telegram.js" }
+    {"src": "/api/send-telegram",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type"
+      },
+      "dest": "api/send-telegram.js"
+    }
   ]
+}
+
 }
