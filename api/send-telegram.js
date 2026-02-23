@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   // Set CORS headers
-  res.setHeader('Access-Control-Allow-Origin', 'https://lamilanese.github.io'); // allow your frontend
+  res.setHeader('Access-Control-Allow-Origin', 'https://ravigny.com'); // allow your frontend
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS'); // allowed methods
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // allowed headers
 
